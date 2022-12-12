@@ -1,0 +1,20 @@
+[
+  {
+    "Id": "B6929D4D-5179-61AB-C5EC-AF0BE9D28751",
+    "SupplierName": "supplier name",
+    "ReceiverName": "receiver name",
+    "IsUsed": false,
+    "DateSupplied": "2019-10-12T07:20:50.52Z",
+    "DateReceived": "2019-11-12T07:20:50.52Z",
+    "QuantityReceived": 500
+  },
+  {
+    "Id": "ADCC739E-7B56-822A-1256-1B95741224A5",
+    "SupplierName": "supplier name 2",
+    "ReceiverName": "receiver name 2",
+    "IsUsed": false,
+    "DateSupplied": "2019-12-12T07:20:50.52Z",
+    "DateReceived": "2020-1-12T07:20:50.52Z",
+    "QuantityReceived": 350
+  }
+]

@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceCore.deps.json
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceCore.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceCore.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceDomain.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceInfrastructure.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceDomain.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\bin\Debug\net7.0\CardInventoryServiceInfrastructure.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.AssemblyInfo.cs
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.csproj.CopyComplete
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\refint\CardInventoryServiceCore.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\CardInventoryServiceCore.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceCore\obj\Debug\net7.0\ref\CardInventoryServiceCore.dll

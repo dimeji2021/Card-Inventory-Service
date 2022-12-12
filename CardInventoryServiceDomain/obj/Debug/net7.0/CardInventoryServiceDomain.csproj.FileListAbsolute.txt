@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\bin\Debug\net7.0\CardInventoryServiceDomain.deps.json
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\bin\Debug\net7.0\CardInventoryServiceDomain.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\bin\Debug\net7.0\CardInventoryServiceDomain.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.AssemblyInfo.cs
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\refint\CardInventoryServiceDomain.dll
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\CardInventoryServiceDomain.pdb
+C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceDomain\obj\Debug\net7.0\ref\CardInventoryServiceDomain.dll
