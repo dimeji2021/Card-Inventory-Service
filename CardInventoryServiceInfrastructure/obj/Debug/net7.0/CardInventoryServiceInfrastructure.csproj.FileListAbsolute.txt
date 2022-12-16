@@ -13,3 +13,20 @@ C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceInfrastructur
 C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\refint\CardInventoryServiceInfrastructure.dll
 C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.pdb
 C:\Users\hp\Desktop\IGate\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\ref\CardInventoryServiceInfrastructure.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceInfrastructure.deps.json
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceInfrastructure.runtimeconfig.json
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceInfrastructure.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceInfrastructure.pdb
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceDomain.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\bin\Debug\net7.0\CardInventoryServiceDomain.pdb
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.AssemblyInfo.cs
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.csproj.CopyComplete
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\refint\CardInventoryServiceInfrastructure.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.pdb
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\CardInventoryServiceInfrastructure.genruntimeconfig.cache
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryServiceInfrastructure\obj\Debug\net7.0\ref\CardInventoryServiceInfrastructure.dll

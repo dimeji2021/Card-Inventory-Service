@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\IGate\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj": {}
+    "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\IGate\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj": {
+    "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\IGate\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj",
         "projectName": "CardInventoryServiceDomain",
-        "projectPath": "C:\\Users\\hp\\Desktop\\IGate\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\IGate\\CardInventoryService\\CardInventoryServiceDomain\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

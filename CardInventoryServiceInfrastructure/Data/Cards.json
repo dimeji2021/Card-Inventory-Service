@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "89701DE2-5DC6-794A-B574-C147F2CD9878",
+    "CardUser": "Patience Orr",
+    "CardIssuerRef": "8918BA26-652A-59DE-776E-74CB058A24AE",
+    "BranchRef": "44886A53-D5D1-C81D-99B9-1504A28932A4",
+    "PrintedAt": "2023-01-03 00:29:17"
+  },
+  {
+    "Id": "C569E8B0-CEEC-7A71-CCD6-6DB10D6A5B56",
+    "CardUser": "Yellow Paw",
+    "CardIssuerRef": "8918BA26-652A-59DE-776E-74CB058A24AE",
+    "BranchRef": "44886A53-D5D1-C81D-99B9-1504A28932A4",
+    "PrintedAt": "2023-01-05 00:29:17"
+  },
+  {
+    "Id": "4D6C6E32-7949-1159-4438-0E884D43E3E3",
+    "CardUser": "Rhea Mcguire",
+    "CardIssuerRef": "C22F7DC3-F18C-3C9C-B8E2-15561572F8A4",
+    "BranchRef": "45AB346E-5B45-BFEA-71E4-34371DB62195",
+    "PrintedAt": "2023-11-27 11:49:13"
+  },
+  {
+    "Id": "AD934B57-79BF-8B47-7DB2-33245CCC210D",
+    "CardUser": "Brent Chan",
+    "CardIssuerRef": "2561F23B-5FB4-3489-D82C-48A2316DB674",
+    "BranchRef": "5B5F4EF1-D94C-1444-165D-DD1ACF3987A6",
+    "PrintedAt": "2023-06-10 13:38:16"
+  },
+  {
+    "Id": "FBD2D35C-46E6-FF8D-F3B2-BDDCA939B64B",
+    "CardUser": "Lillith Rivera",
+    "CardIssuerRef": "A223F7F8-E358-1DEE-9524-3BCDC877642B",
+    "BranchRef": "D115A710-87EB-0677-D6C0-C7DE2563DCC8",
+    "PrintedAt": "2023-03-17 11:50:06"
+  },
+  {
+    "Id": "EB45F5D8-7CDB-1707-A036-236236170461",
+    "CardUser": "Jack English",
+    "CardIssuerRef": "B798D514-631B-8C85-37DA-B77E037C251B",
+    "BranchRef": "7F9E4477-C112-5AB4-4EC0-1F652A73815C",
+    "PrintedAt": "2022-11-01 04:02:49"
+  }
+]

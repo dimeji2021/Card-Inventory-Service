@@ -24,6 +24,12 @@ namespace CardInventoryServiceInfrastructure
                 var stock = JsonConvert.DeserializeObject<List<Stock>>(readText);
                 await context.AddRangeAsync(stock);
             }
+            if (!context.Cards.Any())
+            {
+                var readText = await File.ReadAllTextAsync(filePath + "Cards.json");
+                var card = JsonConvert.DeserializeObject<List<Card>>(readText);
+                await context.AddRangeAsync(card);
+            }
             await context.SaveChangesAsync();
         }
     }

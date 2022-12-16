@@ -15,26 +15,22 @@ namespace CardInventoryServiceCore.Service
             _stockRepository = stockRepository;
             _mapper = mapper;
         }
-        public Task<bool> AddCard(StockRequestDto model)
+        public async Task<bool> AddStock(StockRequestDto model)
         {
             var res =_mapper.Map<Stock>(model);
-            return _stockRepository.AddCard(res);
+            return await _stockRepository.AddStock(res);
         }
-        public int GetAvailableCards()
+        public int GetCardStockCount()
         {
-            return _stockRepository.GetAvailableCards();
+            return _stockRepository.GetCardStockCount();
         }
-        public int GetAllCardsBySupplier(string supplierName)
+        public int GetCardStockCountBySupplier(string supplierName)
         {
-            return _stockRepository.GetAllCardsBySupplier(supplierName);
+            return _stockRepository.GetCardStockCountBySupplier(supplierName);
         }
-        public int GetUsedCards()
+        public StockSummaryDto GetStockSummary()
         {
-            return _stockRepository.GetUsedCards();
-        }
-        public StockSummaryDto GetCardSummary()
-        {
-            return _stockRepository.GetCardSummary();
+            return _stockRepository.GetStockSummary();
         }
     }
 }

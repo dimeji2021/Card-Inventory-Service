@@ -16,29 +16,28 @@ namespace CardInventoryServiceInfrastructure.Repository
         {
             _context = context;
         }
-        public async Task<bool> AddCard(Stock model)
+        public async Task<bool> AddStock(Stock model)
         {
             await _context.AddAsync(model);
             await _context.SaveChangesAsync();
             return true;
         }
-        public int GetAvailableCards()
+        public int GetCardStockCount()
         {
-            return _context.Stocks.Count();
+            return _context.Stocks.Sum(c=>c.QuantityReceived);
         }
-        public int GetAllCardsBySupplier(string supplierName)
+        public int GetCardStockCountBySupplier(string supplierName)
         {
-            return _context.Stocks.Where(s => s.SupplierName == supplierName).Count();
+            return _context.Stocks.Where(s => s.SupplierName == supplierName).Sum(c=>c.QuantityReceived);
         }
-        public int GetUsedCards()
+        public StockSummaryDto GetStockSummary()
         {
-            return _context.Stocks.Where(s => s.IsUsed == true).Count();
-        }
-        public StockSummaryDto GetCardSummary()
-        {
+            int copiesStocked = _context.Stocks.Sum(c => c.QuantityReceived);
+            int copiesLeft = copiesStocked - (_context.Cards.Count());
+
             StockSummaryDto sumR = new StockSummaryDto();
-            sumR.CopiesStocked = _context.Stocks.Count();
-            sumR.CopiesLeft = _context.Stocks.Select(s => s.IsUsed == false).Count();
+            sumR.CopiesStocked = copiesStocked;
+            sumR.CopiesLeft = copiesLeft<=0 ? 0 : copiesLeft;
             sumR.LastRestock = _context.Stocks.OrderBy(s => s.DateReceived).LastOrDefault().DateReceived;
             return sumR;
         }

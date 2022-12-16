@@ -15,30 +15,26 @@ namespace CardInventoryService.Controllers
         {
             _stockService = stockService;
         }
-        [HttpPost("add-card")]
-        public IActionResult AddCard([FromBody]StockRequestDto request)
+        [HttpPost("add_stock")]
+        public async Task<IActionResult> AddStock([FromBody]StockRequestDto request)
         {
-            return Ok(_stockService.AddCard(request));
+            return Ok(await _stockService.AddStock(request));
         }
-        [HttpGet("get-available-card")]
-        public IActionResult GetAvailableCards()
+        [HttpGet("get_card_stock_count")]
+        public IActionResult GetCardStockCount()
         {
-            return Ok(_stockService.GetAvailableCards());
+            return Ok(_stockService.GetCardStockCount());
         }
-        [HttpGet("get-card-by-supplier")]
-        public IActionResult GetAllCardsBySupplier([FromBody]string supplier)
+
+        [HttpGet("get_card_stock_count_by_supplier")]
+        public IActionResult GetCardStockCountBySupplier(string supplier)
         {
-            return Ok(_stockService.GetAllCardsBySupplier(supplier));
+            return Ok(_stockService.GetCardStockCountBySupplier(supplier));
         }
-        [HttpGet("get-used-card")]
-        public IActionResult GetUsedCards()
+        [HttpGet("get_stock_summary")]
+        public IActionResult GetStockSummary()
         {
-            return Ok(_stockService.GetUsedCards());
-        }
-        [HttpGet("get-car-summary")]
-        public IActionResult GetCardSummary()
-        {
-            return Ok(_stockService.GetCardSummary());
+            return Ok(_stockService.GetStockSummary());
         }
     }
 }

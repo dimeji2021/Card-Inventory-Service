@@ -11,7 +11,6 @@ namespace CardInventoryServiceDomain.Model
         public Guid Id { get; set; }
         public string SupplierName { get; set; } = String.Empty;
         public string ReceiverName { get; set; } = String.Empty ;
-        public bool IsUsed { get; set; } = false;
         public DateTime DateSupplied { get; set; } 
         public DateTime DateReceived { get; set; }
         public int QuantityReceived { get; set; }

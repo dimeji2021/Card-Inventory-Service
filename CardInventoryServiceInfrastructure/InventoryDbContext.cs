@@ -7,5 +7,7 @@ namespace CardInventoryServiceInfrastructure
     {
         public InventoryDbContext(DbContextOptions<InventoryDbContext> options) : base(options) { }
         public DbSet<Stock> Stocks { get; set; }
+        public DbSet<Card> Cards { get; set; }
+
     }
 }

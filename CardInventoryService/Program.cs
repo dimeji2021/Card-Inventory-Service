@@ -15,6 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IStockService,StockService>();
 builder.Services.AddScoped<IStockRepository,StockRepository>();
+builder.Services.AddScoped<ICardRepository, CardRepository>();
+builder.Services.AddScoped<ICardService, CardService>();
+
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
