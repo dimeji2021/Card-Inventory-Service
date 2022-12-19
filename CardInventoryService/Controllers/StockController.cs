@@ -15,23 +15,23 @@ namespace CardInventoryService.Controllers
         {
             _stockService = stockService;
         }
-        [HttpPost("add_stock")]
+        [HttpPost("AddStock")]
         public async Task<IActionResult> AddStock([FromBody]StockRequestDto request)
         {
             return Ok(await _stockService.AddStock(request));
         }
-        [HttpGet("get_card_stock_count")]
+        [HttpGet("GetCardStockCount")]
         public IActionResult GetCardStockCount()
         {
             return Ok(_stockService.GetCardStockCount());
         }
 
-        [HttpGet("get_card_stock_count_by_supplier")]
+        [HttpGet("GetCardStockCountBySupplier/{supplier}")]
         public IActionResult GetCardStockCountBySupplier(string supplier)
         {
             return Ok(_stockService.GetCardStockCountBySupplier(supplier));
         }
-        [HttpGet("get_stock_summary")]
+        [HttpGet("GetStockSummary")]
         public IActionResult GetStockSummary()
         {
             return Ok(_stockService.GetStockSummary());

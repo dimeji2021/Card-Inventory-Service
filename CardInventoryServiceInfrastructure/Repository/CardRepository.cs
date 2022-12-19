@@ -1,18 +1,5 @@
 ﻿using CardInventoryServiceDomain.Model;
 using CardInventoryServiceInfrastructure.IRepository;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-//·Create Card
-//·Get Card by Reference
-//·Get Card by name
-//. Get Printed Cards
-
 namespace CardInventoryServiceInfrastructure.Repository
 {
     public class CardRepository : ICardRepository 

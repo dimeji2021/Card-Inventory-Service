@@ -15,27 +15,27 @@ namespace CardInventoryService.Controllers
         {
             _cardService = cardService;
         }
-        [HttpPost("create_card")]
+        [HttpPost("CreateCard")]
         public async Task<IActionResult> CreateCard([FromBody] CardRequestDto request)
         {
             return Ok(await _cardService.CreateCard(request));
         }
-        [HttpGet("get_card_by_Id")]
+        [HttpGet("GetCardById/{Id}")]
         public IActionResult GetCardById(Guid Id)
         {
             return Ok(_cardService.GetCardById(Id));
         }
-        [HttpGet("get_card_by_IssuerRef")]
+        [HttpGet("GetCardByIssuerRef/{Id}")]
         public IActionResult GetCardByIssuerRef(Guid Id)
         {
             return Ok(_cardService.GetCardByIssuerRef(Id));
         }
-        [HttpGet("get_printed_cards")]
+        [HttpGet("GetPrintedCards/page/{pageSize}/{pageNumber}")]
         public IActionResult GetPrintedCards(int pageSize, int pageNumber)
         {
             return Ok(_cardService.GetPrintedCards(pageSize, pageNumber));
         }
-        [HttpGet("get_used_card_count")]
+        [HttpGet("GetUsedCardCount")]
         public IActionResult GetUsedCardsCount()
         {
             return Ok(_cardService.GetUsedCardsCount());
