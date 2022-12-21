@@ -1,25 +1,16 @@
-﻿using AutoMapper;
-using CardInventoryServiceDomain.DTO;
+﻿using CardInventoryServiceDomain.DTO;
 using CardInventoryServiceDomain.Model;
 using CardInventoryServiceInfrastructure.IRepository;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CardInventoryServiceInfrastructure.Repository
 {
     public class StockRepository : IStockRepository
     {
         private readonly InventoryDbContext _context;
-        private readonly IMapper _mapper;
 
-        public StockRepository(InventoryDbContext context, IMapper mapper)
+        public StockRepository(InventoryDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
         public async Task<Guid> AddStock(StockRequestDto model)
         {

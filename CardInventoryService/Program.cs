@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 //Configure service
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IStockRepository,StockRepository>();
 builder.Services.AddScoped<ICardRepository, CardRepository>();
 
