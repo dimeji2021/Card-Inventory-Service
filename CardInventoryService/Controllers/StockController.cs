@@ -1,6 +1,5 @@
-﻿using CardInventoryServiceCore.IService;
-using CardInventoryServiceDomain.DTO;
-using Microsoft.AspNetCore.Http;
+﻿using CardInventoryServiceDomain.DTO;
+using CardInventoryServiceInfrastructure.IRepository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardInventoryService.Controllers
@@ -9,32 +8,32 @@ namespace CardInventoryService.Controllers
     [ApiController]
     public class StockController : ControllerBase
     {
-        private readonly IStockService _stockService;
+        private IStockRepository _stockRepository;
 
-        public StockController(IStockService stockService)
+        public StockController(IStockRepository stockRepository)
         {
-            _stockService = stockService;
+            _stockRepository = stockRepository;
         }
         [HttpPost("AddStock")]
         public async Task<IActionResult> AddStock([FromBody]StockRequestDto request)
         {
-            return Ok(await _stockService.AddStock(request));
+            return Ok(await _stockRepository.AddStock(request));
         }
         [HttpGet("GetCardStockCount")]
         public IActionResult GetCardStockCount()
         {
-            return Ok(_stockService.GetCardStockCount());
+            return Ok(_stockRepository.GetCardStockCount());
         }
 
         [HttpGet("GetCardStockCountBySupplier/{supplier}")]
         public IActionResult GetCardStockCountBySupplier(string supplier)
         {
-            return Ok(_stockService.GetCardStockCountBySupplier(supplier));
+            return Ok(_stockRepository.GetCardStockCountBySupplier(supplier));
         }
         [HttpGet("GetStockSummary")]
         public IActionResult GetStockSummary()
         {
-            return Ok(_stockService.GetStockSummary());
+            return Ok(_stockRepository.GetStockSummary());
         }
     }
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UzUE1P6COxifOJgOalALQ+0nv0UIA13YTeKY4vsEOxRvQLO4SUaIEX4SPVA0zIor6Ym+iopvkHosAXSKSQHEdA==",
+  "dgSpecHash": "RfIE/Ew1d/5Q92lcpiHUBmhc/BlptAIxX7cTr6QnEOvzFFaCj+irueCj3qCtmqlVEdJ2YAwLABM1yY0LF+SjOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\Desktop\\IGate\\New folder\\CardInventoryService\\CardInventoryServiceDomain\\CardInventoryServiceDomain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,4 +1,6 @@
-﻿using CardInventoryServiceDomain.Model;
+﻿using AutoMapper;
+using CardInventoryServiceDomain.DTO;
+using CardInventoryServiceDomain.Model;
 using CardInventoryServiceInfrastructure.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,13 +14,17 @@ namespace CardInventoryServiceInfrastructure.Repository
     public class StockRepository : IStockRepository
     {
         private readonly InventoryDbContext _context;
-        public StockRepository(InventoryDbContext context)
+        private readonly IMapper _mapper;
+
+        public StockRepository(InventoryDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
-        public async Task<bool> AddStock(Stock model)
+        public async Task<bool> AddStock(StockRequestDto model)
         {
-            await _context.AddAsync(model);
+            var stock = _mapper.Map<Stock>(model);
+            await _context.AddAsync(stock);
             await _context.SaveChangesAsync();
             return true;
         }

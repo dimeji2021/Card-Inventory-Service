@@ -9,7 +9,7 @@
       "CardInventoryService/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
-          "CardInventoryServiceCore": "1.0.0",
+          "CardInventoryServiceInfrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.0-preview.7.22376.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
@@ -208,19 +208,6 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.12": {
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Options": "6.0.0",
-          "StackExchange.Redis": "2.6.86"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
-            "assemblyVersion": "6.0.12.0",
-            "fileVersion": "6.0.1222.57109"
-          }
-        }
-      },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0"
@@ -360,28 +347,6 @@
           }
         }
       },
-      "Pipelines.Sockets.Unofficial/2.2.2": {
-        "dependencies": {
-          "System.IO.Pipelines": "5.0.1"
-        },
-        "runtime": {
-          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.2.2.34088"
-          }
-        }
-      },
-      "StackExchange.Redis/2.6.86": {
-        "dependencies": {
-          "Pipelines.Sockets.Unofficial": "2.2.2"
-        },
-        "runtime": {
-          "lib/net5.0/StackExchange.Redis.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.6.86.49666"
-          }
-        }
-      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -480,7 +445,6 @@
           }
         }
       },
-      "System.IO.Pipelines/5.0.1": {},
       "System.Runtime.Caching/4.7.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -562,19 +526,10 @@
           }
         }
       },
-      "CardInventoryServiceCore/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "12.0.0",
-          "CardInventoryServiceDomain": "1.0.0",
-          "CardInventoryServiceInfrastructure": "1.0.0",
-          "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.12",
-          "StackExchange.Redis": "2.6.86"
-        },
-        "runtime": {
-          "CardInventoryServiceCore.dll": {}
-        }
-      },
       "CardInventoryServiceDomain/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.0"
+        },
         "runtime": {
           "CardInventoryServiceDomain.dll": {}
         }
@@ -725,13 +680,6 @@
       "path": "microsoft.extensions.caching.memory/6.0.1",
       "hashPath": "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Caching.StackExchangeRedis/6.0.12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-h+L74aOrZHYAVU2cpLVzs+oCh8UGvE6hMmYvUmLvtRGSCf5OhZkhiNNVBG7r7I+ar6FM/VPqIa2i5Wv9cwZRkA==",
-      "path": "microsoft.extensions.caching.stackexchangeredis/6.0.12",
-      "hashPath": "microsoft.extensions.caching.stackexchangeredis.6.0.12.nupkg.sha512"
-    },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -858,20 +806,6 @@
       "path": "newtonsoft.json/13.0.2",
       "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
     },
-    "Pipelines.Sockets.Unofficial/2.2.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Bhk0FWxH1paI+18zr1g5cTL+ebeuDcBCR+rRFO+fKEhretgjs7MF2Mc1P64FGLecWp4zKCUOPzngBNrqVyY7Zg==",
-      "path": "pipelines.sockets.unofficial/2.2.2",
-      "hashPath": "pipelines.sockets.unofficial.2.2.2.nupkg.sha512"
-    },
-    "StackExchange.Redis/2.6.86": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-++rdOGeAJ3GUZADwygIgap4fyU/pvvtRLN2FClawW/OxG5XhfS/mH66ADk19k+oj6SawuBqgH39mhKhVngai/g==",
-      "path": "stackexchange.redis/2.6.86",
-      "hashPath": "stackexchange.redis.2.6.86.nupkg.sha512"
-    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",
       "serviceable": true,
@@ -934,13 +868,6 @@
       "sha512": "sha512-5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
       "path": "system.identitymodel.tokens.jwt/6.8.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512"
-    },
-    "System.IO.Pipelines/5.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
-      "path": "system.io.pipelines/5.0.1",
-      "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
     },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",
@@ -1011,11 +938,6 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
-    },
-    "CardInventoryServiceCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "CardInventoryServiceDomain/1.0.0": {
       "type": "project",

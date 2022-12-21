@@ -1,4 +1,5 @@
-﻿using CardInventoryServiceDomain.Model;
+﻿using CardInventoryServiceDomain.DTO;
+using CardInventoryServiceDomain.Model;
 using CardInventoryServiceInfrastructure.IRepository;
 namespace CardInventoryServiceInfrastructure.Repository
 {
@@ -10,9 +11,17 @@ namespace CardInventoryServiceInfrastructure.Repository
         {
             _context = context;
         }
-        public async Task<bool> CreateCard(Card model)
+        public async Task<bool> CreateCard(CardRequestDto model)
         {
-            await _context.Cards.AddAsync(model);
+            var card = new Card()
+            {
+                Id = Guid.NewGuid(),
+                CardUser = model.CardUser,
+                CardIssuerRef = model.CardIssuerRef,
+                BranchRef = model.BranchRef,
+                PrintedAt = DateTime.Now
+            };
+            await _context.Cards.AddAsync(card);
             await _context.SaveChangesAsync();
             return true;
         }

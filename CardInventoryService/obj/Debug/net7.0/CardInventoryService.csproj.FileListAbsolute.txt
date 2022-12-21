@@ -117,10 +117,8 @@ C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\b
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceCore.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceDomain.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceInfrastructure.dll
-C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceCore.pdb
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceDomain.pdb
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\CardInventoryServiceInfrastructure.pdb
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\obj\Debug\net7.0\CardInventoryService.csproj.AssemblyReference.cache
@@ -146,6 +144,3 @@ C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\o
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\obj\Debug\net7.0\ref\CardInventoryService.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Humanizer.dll
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
-C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\StackExchange.Redis.dll
-C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
