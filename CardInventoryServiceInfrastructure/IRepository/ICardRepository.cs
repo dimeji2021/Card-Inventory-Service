@@ -5,7 +5,7 @@ namespace CardInventoryServiceInfrastructure.IRepository
 {
     public interface ICardRepository
     {
-        Task<bool> CreateCard(CardRequestDto model);
+        Task<Guid> CreateCard(CardRequestDto model);
         Card GetCardById(Guid Id);
         List<Card> GetCardByIssuerRef(Guid issuerRef);
         List<Card> GetPrintedCards(int pageSize, int pageNumber);

@@ -21,12 +21,20 @@ namespace CardInventoryServiceInfrastructure.Repository
             _context = context;
             _mapper = mapper;
         }
-        public async Task<bool> AddStock(StockRequestDto model)
+        public async Task<Guid> AddStock(StockRequestDto model)
         {
-            var stock = _mapper.Map<Stock>(model);
+            var stock = new Stock()
+            {
+                Id = Guid.NewGuid(),
+                SupplierName = model.SupplierName,
+                ReceiverName = model.ReceiverName,
+                DateSupplied = model.DateSupplied,
+                QuantityReceived = model.QuantitySupplied,
+                DateReceived = DateTime.Now
+            };
             await _context.AddAsync(stock);
             await _context.SaveChangesAsync();
-            return true;
+            return stock.Id;
         }
         public int GetCardStockCount()
         {

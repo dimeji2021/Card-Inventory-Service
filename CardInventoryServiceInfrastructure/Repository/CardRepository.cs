@@ -11,7 +11,7 @@ namespace CardInventoryServiceInfrastructure.Repository
         {
             _context = context;
         }
-        public async Task<bool> CreateCard(CardRequestDto model)
+        public async Task<Guid> CreateCard(CardRequestDto model)
         {
             var card = new Card()
             {
@@ -23,7 +23,7 @@ namespace CardInventoryServiceInfrastructure.Repository
             };
             await _context.Cards.AddAsync(card);
             await _context.SaveChangesAsync();
-            return true;
+            return card.Id;
         }
         public Card GetCardById(Guid Id)
         {
