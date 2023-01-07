@@ -57,19 +57,19 @@ namespace CardInventoryServiceInfrastructure.Repository
         public List<Card> GetPrintedCards(int pageSize, int pageNumber)
         {
             int skip = (pageNumber - 1) * pageSize;
+            List<Card> cards;
+            cards = _memoryCache.Get<List<Card>>(key: "cards");
 
-            var res = _memoryCache.Get<List<Card>>(key: "cards");
-
-            if (res is null)
+            if (cards is null)
             {
-                res = _context.Cards
+                cards = _context.Cards
                             .OrderBy(x => x.Id)
                             .Skip(skip)
                             .Take(pageSize)
                             .ToList();
-                _memoryCache.Set(key: "cards", res,TimeSpan.FromMinutes(1));
+                _memoryCache.Set(key: "cards", cards, TimeSpan.FromMinutes(1));
             }
-            return res;
+            return cards;
         }
         public int GetUsedCardsCount()
         {
