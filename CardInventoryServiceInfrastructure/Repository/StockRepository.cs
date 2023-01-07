@@ -1,4 +1,5 @@
-﻿using CardInventoryServiceDomain.DTO;
+﻿using CardInventoryServiceDomain.Core.Utilities;
+using CardInventoryServiceDomain.DTO;
 using CardInventoryServiceDomain.Model;
 using CardInventoryServiceInfrastructure.IRepository;
 
@@ -29,11 +30,11 @@ namespace CardInventoryServiceInfrastructure.Repository
         }
         public int GetCardStockCount()
         {
-            return _context.Stocks.Sum(c=>c.QuantityReceived);
+            return _context.Stocks.Sum(c => c.QuantityReceived);
         }
         public int GetCardStockCountBySupplier(string supplierName)
         {
-            return _context.Stocks.Where(s => s.SupplierName == supplierName).Sum(c=>c.QuantityReceived);
+            return _context.Stocks.Where(s => s.SupplierName == supplierName).Sum(c => c.QuantityReceived);
         }
         public StockSummaryDto GetStockSummary()
         {
@@ -42,7 +43,7 @@ namespace CardInventoryServiceInfrastructure.Repository
 
             StockSummaryDto sumR = new StockSummaryDto();
             sumR.CopiesStocked = copiesStocked;
-            sumR.CopiesLeft = copiesLeft<=0 ? 0 : copiesLeft;
+            sumR.CopiesLeft = copiesLeft <= 0 ? 0 : copiesLeft;
             sumR.LastRestock = _context.Stocks.OrderBy(s => s.DateReceived).LastOrDefault().DateReceived;
             return sumR;
         }

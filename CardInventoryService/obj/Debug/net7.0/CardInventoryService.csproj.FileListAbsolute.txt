@@ -144,3 +144,10 @@ C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\o
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\obj\Debug\net7.0\CardInventoryService.pdb
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\obj\Debug\net7.0\CardInventoryService.genruntimeconfig.cache
 C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\obj\Debug\net7.0\ref\CardInventoryService.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\StackExchange.Redis.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\hp\Desktop\IGate\New folder\CardInventoryService\CardInventoryService\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll

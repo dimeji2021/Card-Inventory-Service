@@ -44,6 +44,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.86, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -126,6 +136,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
