@@ -35,7 +35,6 @@ namespace CardInventoryServiceInfrastructure.Repository
                 ToRecipients = new List<Recipients>
                 {
                    new Recipients {ToAddress = "adedimeji88@yahoo.com", ToName = "Dimeji"},
-                   new Recipients {ToAddress = "testing@gmail.com", ToName = "test"}
 
                 },
                 Subject = "Successful Creation",
@@ -52,24 +51,24 @@ namespace CardInventoryServiceInfrastructure.Repository
         }
         public List<Card> GetCardByIssuerRef(Guid issuerRef)
         {
-            return _context.Cards.Where(c => c.CardIssuerRef == issuerRef).ToList();
+            List<Card> cards;
+            cards = _memoryCache.Get<List<Card>>(key: "cards");
+            if (cards is null)
+            {
+
+                cards = _context.Cards.Where(c => c.CardIssuerRef == issuerRef).ToList();
+                _memoryCache.Set(key: "cards", cards, TimeSpan.FromMinutes(1));
+            }
+            return cards;
         }
         public List<Card> GetPrintedCards(int pageSize, int pageNumber)
         {
             int skip = (pageNumber - 1) * pageSize;
-            List<Card> cards;
-            cards = _memoryCache.Get<List<Card>>(key: "cards");
-
-            if (cards is null)
-            {
-                cards = _context.Cards
-                            .OrderBy(x => x.Id)
-                            .Skip(skip)
-                            .Take(pageSize)
-                            .ToList();
-                _memoryCache.Set(key: "cards", cards, TimeSpan.FromMinutes(1));
-            }
-            return cards;
+            return _context.Cards
+                           .OrderBy(x => x.Id)
+                           .Skip(skip)
+                           .Take(pageSize)
+                           .ToList();
         }
         public int GetUsedCardsCount()
         {

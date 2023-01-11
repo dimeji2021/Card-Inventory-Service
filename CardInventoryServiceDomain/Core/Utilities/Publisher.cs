@@ -11,7 +11,7 @@ namespace CardInventoryServiceDomain.Core.Utilities
     public class Publisher
     {
         // Create a connection to the Redis server
-        ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost:6379");
+        ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost:6379,abortConnect=false");
         private const string Channel = "providus-channel";
         public void Publish<T>(T model)
         {

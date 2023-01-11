@@ -4,6 +4,7 @@ using CardInventoryServiceInfrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,7 @@ builder.Services.AddScoped<ICardRepository, CardRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
+
 
 var AuthConnString = builder.Configuration.GetConnectionString("DbConnection");
 builder.Services.AddDbContext<InventoryDbContext>(options => {
